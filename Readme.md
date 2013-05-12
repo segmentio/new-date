@@ -13,12 +13,12 @@
 
   Returns a new Date object created from the input. The input can be:
 
-    * Date objects
-    * [date strings](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Date/parse)
-    * millisecond numbers
-    * second numbers
-    * millisecond strings
-    * second strings
+  * Date objects
+  * [date strings](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Date/parse)
+  * millisecond numbers
+  * second numbers
+  * millisecond strings
+  * second strings
 
 ```js
 var newDate = require('new-date');
