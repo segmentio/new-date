@@ -25,6 +25,8 @@ var newDate = require('new-date');
 
 newDate(new Date);
 newDate('Wed, 09 Aug 1995 00:00:00 GMT');
+newDate('Aug 9, 1995');
+newDate('2011-10-10T14:48:00');
 newDate(1363288923637);
 newDate(1363288923);
 newDate('1363288923637');
