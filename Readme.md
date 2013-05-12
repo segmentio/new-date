@@ -12,10 +12,24 @@
 ### newDate(Date|String|Number)
 
   Returns a new Date object created from the input. The input can be:
+
     * Date objects
-    * date strings
-    * milliseconds
-    * seconds
+    * [date strings](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Date/parse)
+    * millisecond numbers
+    * second numbers
+    * millisecond strings
+    * second strings
+
+```js
+var newDate = require('new-date');
+
+newDate(new Date);
+newDate('Wed, 09 Aug 1995 00:00:00 GMT');
+newDate(1363288923637);
+newDate(1363288923);
+newDate('1363288923637');
+newDate('1363288923');
+```
 
 ## License
 

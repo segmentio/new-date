@@ -15,14 +15,20 @@ describe('new-date', function () {
     assert(newDate("Thu, 01 Jan 1970 00:00:00 GMT-0400").getTime() === 14400000);
   });
 
-  it('should accept milliseconds', function () {
+  it('should accept millisecond integers or strings', function () {
     var millis = 1363288923637;
     assert(newDate(millis).getTime() === millis);
+    assert(newDate(millis + '').getTime() === millis);
   });
 
-  it('should accept seconds', function () {
+  it('should accept second integers or strings', function () {
     var seconds = 1363288923;
     assert(newDate(seconds).getTime() === seconds * 1000);
+    assert(newDate(seconds + '').getTime() === seconds * 1000);
+  });
+
+  it('should fail on random strings', function () {
+    assert(isNaN(newDate('a').getTime()));
   });
 
 });
