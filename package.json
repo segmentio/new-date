@@ -1,13 +1,12 @@
 {
   "name": "new-date",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Creates a new Date, but accepts a few more input types than normal",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -18,6 +17,9 @@
     "date",
     "new-date"
   ],
+  "dependencies": {
+    "type": "segmentio/type"
+  },
   "author": "Segment.io",
   "license": "MIT",
   "readmeFilename": "Readme.md",
