@@ -1,7 +1,6 @@
-
 # new-date
 
-  Component: creates a new Date, but accepts a few more input types than normal, like Unix timestamps.
+  Create a new Date, accepting more input types than normal, like Unix timestamps.
 
 ## Installation
 
