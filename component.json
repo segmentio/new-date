@@ -2,10 +2,10 @@
   "name": "new-date",
   "repo": "segmentio/new-date",
   "description": "Component: creates a new Date, but accepts a few more input types than normal, like Unix timestamps.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "keywords": [],
   "dependencies": {
-    "component/type": "*"
+    "ianstormtaylor/is": "0.0.4"
   },
   "development": {
     "component/assert": "*"

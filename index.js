@@ -1,25 +1,25 @@
-var type = require('type');
+
+var is = require('is');
 
 
 /**
  * Returns a new Javascript Date object, allowing a variety of extra input types
- * over the native one.
+ * over the native Date constructor.
  *
- * @param {Date|String|Number} input
+ * @param {Date|String|Number} val
  */
 
-module.exports = function newDate (input) {
+module.exports = function newDate (val) {
+  if (is.number(val)) return new Date(toMs(val));
+  if (is.date(val)) return new Date(val.getTime()); // construtor woulda floored
 
-  // Convert input from seconds to milliseconds.
-  input = toMilliseconds(input);
+  // default to letting the Date constructor parse it
+  var date = new Date(val);
 
-  // By default, delegate to Date, which will return `Invalid Date`s if wrong.
-  var date = new Date(input);
-
-  // If we have a string that the Date constructor couldn't parse, convert it.
-  if (isNaN(date.getTime()) && 'string' === type(input)) {
-    var milliseconds = toMilliseconds(parseInt(input, 10));
-    date = new Date(milliseconds);
+  // couldn't parse, but we have a string, assume it was a second/milli string
+  if (is.nan(date.getTime()) && is.string(val)) {
+    var millis = toMs(parseInt(val, 10));
+    date = new Date(millis);
   }
 
   return date;
@@ -27,13 +27,13 @@ module.exports = function newDate (input) {
 
 
 /**
- * If the number passed in is seconds from the epoch, turn it into milliseconds.
+ * If the number passed val is seconds from the epoch, turn it into milliseconds.
  * Milliseconds would be greater than 31557600000 (December 31, 1970).
  *
- * @param seconds
+ * @param {Number} num
  */
 
-function toMilliseconds (seconds) {
-  if ('number' === type(seconds) && seconds < 31557600000) return seconds * 1000;
-  return seconds;
+function toMs (num) {
+  if (num < 31557600000) return num * 1000;
+  return num;
 }
