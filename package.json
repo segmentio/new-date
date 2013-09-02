@@ -8,5 +8,5 @@
   "keywords": ["new", "date", "new-date"],
   "dependencies": {
     "is": "ianstormtaylor/is#0.0.4"
-  },
+  }
 }
