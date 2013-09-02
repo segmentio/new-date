@@ -1,3 +1,7 @@
+0.1.2 - September 2, 2013
+-------------------------
+* fix bug in `package.json`
+
 0.1.1 - August 29, 2013
 -----------------------
 * fix for firefox flooring dates
