@@ -1,3 +1,7 @@
+0.2.0 - September 3, 2013
+-------------------------
+* fix ISO date parsing in old browsers
+
 0.1.2 - September 2, 2013
 -------------------------
 * fix bug in `package.json`

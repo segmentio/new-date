@@ -1,4 +1,4 @@
-build: components index.js
+build: components
 	@component build --dev
 
 components: component.json
@@ -10,4 +10,4 @@ clean:
 test: build
 	open test/index.html
 
-.PHONY: clean test
+.PHONY: build clean test
