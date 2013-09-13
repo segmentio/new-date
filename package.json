@@ -5,8 +5,13 @@
   "description": "Creates a new Date, but accepts a few more input types than normal.",
   "main": "lib/index.js",
   "repository": "git://github.com/segmentio/new-date.git",
-  "keywords": ["new", "date", "new-date"],
+  "keywords": [
+    "new",
+    "date",
+    "new-date"
+  ],
   "dependencies": {
-    "is": "~0.2.6"
+    "is": "0.2.6",
+    "isodate": "0.1.4"
   }
 }
