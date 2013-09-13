@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "license": "MIT",
   "description": "Creates a new Date, but accepts a few more input types than normal.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": "git://github.com/segmentio/new-date.git",
   "keywords": ["new", "date", "new-date"],
   "dependencies": {
