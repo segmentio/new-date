@@ -12,6 +12,6 @@
   ],
   "dependencies": {
     "is": "0.2.6",
-    "isodate": "0.1.4"
+    "isodate": "git+ssh://git@github.com:segmentio/isodate"
   }
 }
