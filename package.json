@@ -1,6 +1,6 @@
 {
   "name": "new-date",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "description": "Creates a new Date, but accepts a few more input types than normal.",
   "main": "lib/index.js",

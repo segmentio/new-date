@@ -2,8 +2,8 @@
   "name": "new-date",
   "repo": "segmentio/new-date",
   "license": "MIT",
-  "description": "Component: creates a new Date, but accepts a few more input types than normal, like Unix timestamps.",
-  "version": "0.2.0",
+  "description": "Creates a new Date, but accepts a few more input types than normal, like Unix timestamps.",
+  "version": "0.3.0",
   "keywords": ["new", "date", "unix", "timestamp"],
   "dependencies": {
     "ianstormtaylor/is": "0.0.5",

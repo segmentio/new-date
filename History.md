@@ -1,3 +1,7 @@
+0.3.0 - October 24, 2013
+-------------------------
+* fix date object should return same date instance
+
 0.2.0 - September 3, 2013
 -------------------------
 * fix ISO date parsing in old browsers
