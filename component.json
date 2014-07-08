@@ -7,7 +7,7 @@
   "keywords": ["new", "date", "unix", "timestamp"],
   "dependencies": {
     "ianstormtaylor/is": "0.0.5",
-    "segmentio/isodate": "0.0.1"
+    "segmentio/isodate": "0.0.x"
   },
   "development": {
     "component/assert": "*"
