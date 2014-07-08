@@ -1,3 +1,8 @@
+
+0.3.1 - July 8, 2014
+-------------------------
+* loosen dep on isodate
+
 0.3.0 - October 24, 2013
 -------------------------
 * fix date object should return same date instance
