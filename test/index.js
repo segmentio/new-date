@@ -1,9 +1,7 @@
+var assert = require('proclaim');
+var newDate = require('../lib');
 
 describe('new-date', function () {
-
-  var newDate = require('new-date');
-  var assert = require('assert');
-
   describe('dates', function () {
     it('new Date', function () {
       var date = new Date();
