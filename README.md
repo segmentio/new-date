@@ -1,23 +1,28 @@
 # new-date
 
-  Create a new Date, accepting more input types than normal, like Unix timestamps.
+[![CircleCI](https://img.shields.io/circleci/project/segmentio/new-date/master.svg?maxAge=2592000)](https://circleci.com/gh/segmentio/new-date)
+[![Codecov](https://img.shields.io/codecov/c/github/segmentio/new-date/master.svg?maxAge=2592000)](https://codecov.io/gh/segmentio/new-date)
+
+Create a new Date, accepting more input types than normal, like Unix timestamps.
 
 ## Installation
 
-    $ component install segmentio/new-date
+```js
+$ npm install @segment/new-date
+```
 
 ## API
 
 ### newDate(Date|String|Number)
 
-  Returns a new Date object created from the input. The input can be:
+Returns a new Date object created from the input. The input can be:
 
-  * Date objects
-  * [date strings](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Date/parse)
-  * millisecond numbers
-  * second numbers
-  * millisecond strings
-  * second strings
+* Date objects
+* [date strings](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Date/parse)
+* millisecond numbers
+* second numbers
+* millisecond strings
+* second strings
 
 ```js
 var newDate = require('new-date');
@@ -31,7 +36,3 @@ newDate(1363288923);
 newDate('1363288923637');
 newDate('1363288923');
 ```
-
-## License
-
-  MIT
