@@ -8,7 +8,7 @@ Create a new Date, accepting more input types than normal, like Unix timestamps.
 ## Installation
 
 ```js
-$ npm install @segment/new-date
+$ npm install new-date
 ```
 
 ## API
