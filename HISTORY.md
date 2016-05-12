@@ -1,3 +1,9 @@
+1.0.0 / 2016-05-11
+==================
+
+  * Modernize test harness
+  * Formatting and fix linting errors, general cleanup
+  * Remove component support
 
 0.3.1 - July 8, 2014
 -------------------------
