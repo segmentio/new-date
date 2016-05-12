@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/segmentio/new-date#readme",
   "dependencies": {
-    "@segment/isodate": "1.0.0",
+    "@segment/isodate": "1.0.2",
     "is": "0.2.6"
   },
   "devDependencies": {
