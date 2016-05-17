@@ -2,7 +2,7 @@
 'use strict';
 
 module.exports = function(config) {
-  var baseConfig = {
+  config.set({
     files: [
       'test/**/*.js'
     ],
@@ -38,11 +38,5 @@ module.exports = function(config) {
         { type: 'json' }
       ]
     }
-  };
-
-  if (process.env.CI) {
-    Object.assign(baseConfig, require('./karma.conf.ci'));
-  }
-
-  config.set(baseConfig);
+  });
 };
