@@ -1,6 +1,9 @@
 machine:
   node:
     version: 4
+  environment:
+    NPM_CONFIG_PROGRESS: false
+    NPM_CONFIG_SPIN: false
 
 dependencies:
   pre:

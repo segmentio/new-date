@@ -1,4 +1,9 @@
+/* eslint-env node */
 'use strict';
+
+if (!process.env.SAUCE_USERNAME || !process.env.SAUCE_ACCESS_KEY) {
+  throw new Error('SAUCE_USERNAME and SAUCE_ACCESS_KEY environment variables are required but are missing');
+}
 
 var customLaunchers = {
   sl_chrome_latest: {
@@ -62,8 +67,6 @@ var customLaunchers = {
 };
 
 module.exports = {
-  concurrency: 1,
-
   singleRun: true,
 
   browsers: ['PhantomJS'].concat(Object.keys(customLaunchers)),
