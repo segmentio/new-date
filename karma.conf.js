@@ -17,6 +17,12 @@ module.exports = function(config) {
       'test/**/*.js': 'browserify'
     },
 
+    client: {
+      mocha: {
+        grep: process.env.GREP
+      }
+    },
+
     browserify: {
       debug: true,
       transform: [
