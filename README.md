@@ -1,6 +1,6 @@
 # new-date
 
-[![CircleCI](https://img.shields.io/circleci/project/segmentio/new-date/master.svg?maxAge=2592000)](https://circleci.com/gh/segmentio/new-date)
+[![CircleCI](https://circleci.com/gh/segmentio/new-date.svg?style=shield&circle-token=060f74f7f82f891aef44686435bdb632d968fb20)](https://circleci.com/gh/segmentio/new-date)
 [![Codecov](https://img.shields.io/codecov/c/github/segmentio/new-date/master.svg?maxAge=2592000)](https://codecov.io/gh/segmentio/new-date)
 
 Create a new Date, accepting more input types than normal, like Unix timestamps.
