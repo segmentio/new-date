@@ -1,3 +1,17 @@
+
+1.0.1 / 2016-09-12
+==================
+
+  * Consolidate analytics.js dependencies (#2)
+  * Karma: Only pick up *.test.js files
+  * Pass GREP through to Karma tests
+  * Improve the way Karma configs get mixed together
+  * Rename test files to include .test in name
+  * Fix CI badge
+  * Test against node, fix linting errors, remove Sauce concurrency limits
+  * Update eslint-config
+  * Fix installation instructions
+
 1.0.0 / 2016-05-11
 ==================
 
