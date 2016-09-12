@@ -64,6 +64,11 @@ var customLaunchers = {
   }
 };
 
+// These tests rely on the timezone being US/Pacific
+Object.keys(customLaunchers).forEach(function(key) {
+  customLaunchers[key].timeZone = 'Los Angeles';
+});
+
 module.exports = function(config) {
   baseConfig(config);
 
