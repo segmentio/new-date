@@ -1,6 +1,8 @@
 machine:
   node:
     version: 4
+  timezone:
+    America/Los_Angeles
   environment:
     NPM_CONFIG_PROGRESS: false
     NPM_CONFIG_SPIN: false
