@@ -33,7 +33,7 @@ describe("new-date", function () {
 
     it('"Wed, 09 Aug 1995"', function () {
       var date = newDate("Wed, 09 Aug 1995");
-      assert.strictEqual(date.getTime(), 807937200000);
+      assert.strictEqual(date.getTime(), 807926400000);
     });
 
     it('"Wed, 09 Aug 1995 04:10:23 GMT"', function () {
@@ -48,7 +48,7 @@ describe("new-date", function () {
 
     it('"2013-05-31 00:24:47" (MySQL)', function () {
       var date = newDate("2013-05-31 00:24:47");
-      assert.strictEqual(date.getTime(), 1369970687000);
+      assert.strictEqual(date.getTime(), 1369959887000);
     });
 
     it('"2013-05-31T00:24:47" (ISO)', function () {

@@ -22,6 +22,6 @@ distclean: clean
 
 # Default test target.
 test:
-	yarn jest
+	TZ=UTC yarn jest
 .PHONY: test
 .DEFAULT_GOAL = test

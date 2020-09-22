@@ -26,4 +26,4 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Test package
-        run: TZ=UTC yarn test
+        run: yarn test
