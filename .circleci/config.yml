@@ -49,7 +49,7 @@ workflows:
       - snyk:
           context: snyk
           requires:
-            - coverage
+            - test
       - publish:
           requires:
             - test
