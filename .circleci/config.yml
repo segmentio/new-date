@@ -1,0 +1,60 @@
+defaults: &defaults
+  working_directory: ~/new-date
+  docker:
+    - image: circleci/node:12
+
+version: 2
+jobs:
+  test:
+    <<: *defaults
+    steps:
+      - checkout
+      - run: npm config set "//registry.npmjs.org/:_authToken" $NPM_AUTH
+      - restore_cache:
+          key: yarn-dependency-cache-{{ checksum "yarn.lock" }}
+      - run: yarn install --frozen-lockfile
+      - save_cache:
+          key: yarn-dependency-cache-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
+      - run: make test
+      - store_test_results:
+          path: junit-reports
+
+  snyk:
+    <<: *defaults
+    steps:
+      - checkout
+      - attach_workspace: { at: . }
+      - run: yarn run snyk test --severity-threshold=high
+      - run: yarn run snyk monitor
+
+  publish:
+    <<: *defaults
+    steps:
+      - checkout
+      - attach_workspace: { at: . }
+      - run: npm config set "//registry.npmjs.org/:_authToken" $NPM_AUTH
+      - run: yarn add -D typescript && yarn run tsc --declaration
+      - run: npm publish .
+
+workflows:
+  version: 2
+  test_and_publish:
+    jobs:
+      - test:
+          filters:
+            tags:
+              only: /.*/
+      - snyk:
+          context: snyk
+          requires:
+            - coverage
+      - publish:
+          requires:
+            - test
+          filters:
+            tags:
+              only: /v[0-9]+(\.[0-9]+)*(-.+)?/
+            branches:
+              ignore: /.*/
