@@ -1,7 +1,6 @@
 name: Publish Node.js Package
 
 on:
-  # change me to `push` to `master branch` or `tag`
   push:
     branches:
       - master
