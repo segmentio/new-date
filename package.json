@@ -1,7 +1,7 @@
 {
   "name": "new-date",
   "description": "Creates a new Date, but accepts a few more input types than normal.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": [
     "new",
     "date",
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/segmentio/new-date#readme",
   "dependencies": {
-    "@segment/isodate": "1.0.2"
+    "@segment/isodate": "1.0.3"
   },
   "devDependencies": {
     "jest": "^26.4.2",
